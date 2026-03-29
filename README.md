@@ -1,91 +1,138 @@
-<details open>
-  <summary>Table of Contents</summary>
+# 🌦️ Weather App (Full Stack - AWS Serverless)
 
-1. [About the Project](#about-the-project)
-   - [Description](#description)
-   - [Features](#features)
-   - [Project Access](#project-access)
-   - [Installation](#installation)
+A real-time weather application built using **HTML, CSS, JavaScript** and deployed on **AWS Cloud** with a **serverless backend**.
 
-4. [Skills](#skills)
+---
 
-5. [Author / Contributors](#author--contributors)
-   - [Contact](#contact)
+## 🚀 Live Demo
 
-6. [License](#license)
-   - [About the License](#about-the-license)
-</details>
+🌐 https://your-s3-link-here
 
-# About the Project
+---
 
-The Weather App is a user-friendly web application that provides real-time weather information for any location, helping users stay informed about current weather conditions.
+## 📂 GitHub Repository
 
-## Description
+📁 https://github.com/your-username/weather-app
 
-**The vanilla js Weather App is a web application that provides real-time weather information for any location worldwide**
+---
 
-The Weather App leverages the WeatherAPI to fetch real-time weather data for the specified location. It provides essential weather details such as temperature, humidity, wind speed, and more. This app allowing users to stay informed about the weather conditions in their desired location.
+## 📊 Architecture
 
-### Features
+User → S3 (Frontend) → API Gateway → Lambda → OpenWeather API → Response → UI
 
--Real-time weather data updates
--Location-based weather information
--Easy-to-use search functionality
--Detailed weather condition descriptions
+---
 
-## Project Access
+## 🧰 Tech Stack
 
-[Click here to view the project](https://shivamshende.github.io/weather-app/)
+### 👨‍💻 Frontend
 
-## Installation
+* HTML
+* CSS
+* JavaScript
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/Shivamshende/weather-app.git
+### ☁️ Backend (Serverless)
 
-2. Navigate to the project directory:
-   cd weather-app
+* AWS Lambda (Node.js)
+* AWS API Gateway
 
-3. Open the index.html file in your web browser
+### 🌍 Cloud & Tools
 
-3. Enter the name of a place in the search box and press the "Search" button or press Enter to view the current weather information for that location.
+* AWS S3 (Static Website Hosting)
+* GitHub (Version Control)
 
-# Skills
+### 🌦️ External API
 
-This project showcases the use of various technologies and skills, including:
+* OpenWeather API
 
-- **DOM Manipulation:** Used to update the UI with weather data dynamically.
+---
 
-- **Asynchronous Progarmming:** Used for making asynchronous HTTP requests to fetch weather data.
+## ✨ Features
 
-- **Error Handling:** Implemented to manage and display errors if the network response is not successful.
+* 🌍 Search weather by city
+* 🌡️ Real-time temperature data
+* 💨 Wind speed & humidity
+* ⚡ Fast & responsive UI
+* ☁️ Fully deployed on AWS
 
-- **Event Handling:** Used to handle user interactions such as clicking a button or pressing Enter in the search box.
+---
 
-- **API Intigration:**  Integrated the WeatherAPI to fetch real-time weather data and API for location suggestions.
+## 🛠️ Setup Instructions
 
-- **Git:** Used for version control and collaboration, allowing for easy sharing and updating of the project code.
+### 1️⃣ Clone Repository
 
-## Author / Contributors
+```bash
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+```
 
-This project is maintained by [Shivam Shende].
+---
 
-Contributions are welcome! Feel free to make changes. You can create a pull request with your changes.
+### 2️⃣ Setup Frontend
 
-### Contact
+* Open `index.html` in browser
+  OR
+* Deploy using AWS S3
 
-For inquiries, suggestions, or collaboration opportunities, feel free to reach out to the author:
+---
 
-- **Your Name:** Shivam Shende
-  - GitHub: https://github.com/shivamshende
-  - Email: shivamshende200@gmail.com
+### 3️⃣ Setup Backend (AWS)
 
-## License
+#### Step 1: Create Lambda Function
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for the full license text.
+* Runtime: Node.js
+* Add weather API logic
 
-### About the License
+#### Step 2: Create API Gateway
 
-The MIT License is a permissive open-source license that allows you to freely use, modify, and distribute this software, subject to the conditions stated in the [LICENSE](LICENSE) file.
+* Create HTTP API
+* Connect with Lambda
 
-Thank you for adhering to the terms of the license!
+#### Step 3: Enable CORS
+
+* Allow all origins
+
+---
+
+### 4️⃣ Connect Frontend to Backend
+
+Update `script.js`:
+
+```javascript
+const API_URL = "https://your-api-id.execute-api.ap-south-1.amazonaws.com/weather";
+```
+
+---
+
+## ⚠️ Common Issues
+
+* ❌ 404 Error → Check `index.html` name
+* ❌ API not working → Check API Gateway URL
+* ❌ CORS Error → Enable CORS in Lambda
+
+---
+
+## 📸 Screenshots
+
+<img width="1918" height="1030" alt="Screenshot 2026-03-29 234612" src="https://github.com/user-attachments/assets/9c1a9ce3-cddb-4455-b237-243739b3865e" />
+
+
+---
+
+## 📈 Learning Outcomes
+
+* ✔️ Serverless architecture (AWS Lambda)
+* ✔️ API integration
+* ✔️ Cloud deployment using AWS S3
+* ✔️ Version control using GitHub
+
+---
+
+## 🔮 Future Improvements
+
+* 🔐 User Authentication (AWS Cognito)
+* 🗄️ Store search history (DynamoDB)
+* 📱 Mobile responsive UI
+* 🔄 CI/CD pipeline
+
+
+
