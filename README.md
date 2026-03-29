@@ -4,15 +4,10 @@ A real-time weather application built using **HTML, CSS, JavaScript** and deploy
 
 ---
 
-## 🚀 Live Demo
-
-🌐 https://your-s3-link-here
-
----
 
 ## 📂 GitHub Repository
 
-📁 https://github.com/your-username/weather-app
+📁[ https://github.com/your-username/weather-app](https://github.com/siddheshchore/weather-app.git)
 
 ---
 
