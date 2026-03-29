@@ -1,4 +1,4 @@
-# 🌦️ Weather App (Full Stack - AWS Serverless)
+# 🌦️ Weather App 
 
 A real-time weather application built using **HTML, CSS, JavaScript** and deployed on **AWS Cloud** with a **serverless backend**.
 
